@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PeinTogo Association - travaux de peinture et rénovation à Lomé, Togo.">
+  <title>PeinTogo Association | Peinture & Rénovation</title>
+  <style>
+    :root{--dark:#17212b;--orange:#d96535;--gold:#f0b44d;--light:#f7f5f1;--white:#fff;--text:#26313a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+    header{position:sticky;top:0;z-index:10;background:rgba(23,33,43,.97);color:#fff;box-shadow:0 2px 12px #0002}
+    nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .logo{font-size:1.35rem;font-weight:800;letter-spacing:.3px}.logo span{color:var(--gold)}
+    nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600;font-size:.95rem}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;color:#fff;padding:80px 20px;background:linear-gradient(#0007,#0008),url("images/realisation-1.jpg") center/cover}
+    .hero-inner{max-width:850px}.hero h1{font-size:clamp(2.5rem,7vw,5rem);margin:0 0 12px}.hero p{font-size:clamp(1.05rem,2.2vw,1.35rem);margin:0 auto 28px}
+    .btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:800;margin:5px}.btn.alt{background:#fff;color:var(--dark)}
+    section{max-width:1100px;margin:auto;padding:72px 20px}h2{text-align:center;font-size:2rem;margin:0 0 35px;color:var(--dark)}
+    .intro{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.intro img{width:100%;border-radius:16px;box-shadow:0 10px 30px #0002}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 5px 20px #0001}.card h3{color:var(--orange);margin-top:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:12px;display:block}
+    .contact{background:var(--dark);color:#fff;max-width:none}.contact-inner{max-width:1100px;margin:auto;padding:72px 20px}.contact h2{color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-box{background:#ffffff10;border:1px solid #ffffff22;border-radius:14px;padding:25px}.contact a{color:#fff}.wa{background:#218838}
+    footer{text-align:center;background:#101820;color:#fff;padding:25px 15px;font-size:.9rem}
+    @media(max-width:760px){nav{align-items:flex-start}nav .links{display:none}.intro,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:180px}}
+    @media(max-width:430px){.gallery{grid-template-columns:1fr}.gallery img{height:230px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">PeinTogo <span>Association</span></div>
+    <div class="links">
+      <a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+      <h1>PeinTogo Association</h1>
+      <p>La peinture, la finition et le savoir-faire au service de vos bâtiments à Lomé et au Togo.</p>
+      <a class="btn" href="#realisations">Voir nos réalisations</a>
+      <a class="btn alt" href="https://wa.me/22898280453" target="_blank" rel="noopener">Nous écrire sur WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="intro">
+      <div>
+        <h2 style="text-align:left">À propos de PeinTogo</h2>
+        <p>PeinTogo Association met en valeur le métier de la peinture et le travail des peintres au Togo. Nous intervenons sur des projets de peinture et de finition de bâtiments, avec une attention particulière portée à la préparation des surfaces, à l'application des couleurs et à la qualité du rendu.</p>
+        <p>Notre objectif est de réaliser des travaux propres, soignés et adaptés aux besoins de chaque projet.</p>
+      </div>
+      <img src="images/peintre-1.jpg" alt="Peintre en train de réaliser une finition">
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="cards">
+      <article class="card"><h3>🎨 Peinture extérieure</h3><p>Mise en peinture des façades et murs extérieurs, préparation des supports et finitions.</p></article>
+      <article class="card"><h3>🏠 Peinture intérieure</h3><p>Finitions intérieures pour maisons, bureaux, commerces et autres bâtiments.</p></article>
+      <article class="card"><h3>🧱 Rénovation & finition</h3><p>Préparation, reprises, protection des surfaces et travaux de finition pour un rendu propre.</p></article>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <h2>Nos réalisations</h2>
+    <div class="gallery">
+      <img src="images/realisation-1.jpg" alt="Maison peinte en jaune">
+      <img src="images/chantier-1.png" alt="Chantier de peinture avec échafaudages">
+      <img src="images/chantier-2.png" alt="Bâtiment en cours de finition">
+      <img src="images/peintre-1.jpg" alt="Peintre sur échafaudage">
+      <img src="images/chantier-3.jpg" alt="Travaux de peinture sur façade">
+    </div>
+  </section>
+
+  <section>
+    <h2>Pourquoi nous choisir ?</h2>
+    <div class="cards">
+      <article class="card"><h3>Travail soigné</h3><p>Nous accordons de l'importance à la préparation et à la qualité des finitions.</p></article>
+      <article class="card"><h3>Expérience de terrain</h3><p>Des réalisations sur des bâtiments résidentiels et des chantiers de grande envergure.</p></article>
+      <article class="card"><h3>Écoute du client</h3><p>Nous adaptons les travaux aux besoins, aux surfaces et au résultat recherché.</p></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2>Contactez PeinTogo Association</h2>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>📍 Localisation</h3>
+          <p>Lomé, Togo</p>
+          <h3>📞 Téléphone / WhatsApp</h3>
+          <p><a href="tel:+22898280453">+228 98 28 04 53</a><br><a href="tel:+22892444801">+228 92 44 48 01</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>✉️ E-mail</h3>
+          <p><a href="mailto:adjingaalbert83@gmail.com">adjingaalbert83@gmail.com</a></p>
+          <a class="btn wa" href="https://wa.me/22898280453" target="_blank" rel="noopener">💬 Demander un devis sur WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 PeinTogo Association — Lomé, Togo. Tous droits réservés.</footer>
+</body>
+</html>
