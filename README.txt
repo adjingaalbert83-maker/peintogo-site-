@@ -1,20 +1,23 @@
-PEINTOGO ASSOCIATION — SITE WEB
-================================
+PEINTOGO ASSOCIATION — SITE WEB v3
 
-Fichiers :
-- index.html : le site complet
-- images/ : vos photos utilisées dans le site
+Contenu:
+- index.html : site complet responsive
+- images/logo-peintogo.png : logo
+- images/ : photos de réalisations
+- robots.txt et sitemap.xml : préparation SEO
 
-Pour tester :
-1. Décompressez le fichier ZIP.
-2. Ouvrez index.html avec Chrome.
+PUBLICATION GITHUB PAGES
+1. Décompressez le ZIP.
+2. Dans votre dépôt GitHub "peintogo-site", remplacez index.html et le dossier images par ceux-ci.
+3. Ajoutez aussi robots.txt et sitemap.xml à la racine.
+4. Commit / enregistrer les changements.
+5. GitHub Pages publiera automatiquement la nouvelle version.
 
-Pour mettre le site en ligne :
-- Il faudra choisir un nom de domaine (ex. peintogo.tg ou peintogoassociation.com)
-- puis un hébergement.
-Je peux ensuite vous guider étape par étape depuis votre téléphone.
+DOMAINE PERSONNALISÉ
+Le site contient déjà les références SEO pour https://www.peintogo.tg/.
+N'ajoutez pas encore de fichier CNAME tant que le domaine n'est pas acheté et que les DNS ne sont pas configurés. Une fois le domaine prêt, utilisez Settings > Pages > Custom domain dans GitHub et saisissez www.peintogo.tg.
 
-Coordonnées intégrées :
-Téléphone/WhatsApp : +228 98 28 04 53 / +228 92 44 48 01
-E-mail : adjingaalbert83@gmail.com
-Localisation : Lomé, Togo
+CONTACTS
+WhatsApp/Téléphone: +228 98 28 04 53 / +228 92 44 48 01
+Email: adjingaalbert83@gmail.com
+Slogan: Avec PeinTogo, vivez la couleur de vos rêves.
