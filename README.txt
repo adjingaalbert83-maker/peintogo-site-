@@ -1,23 +1,22 @@
-PEINTOGO ASSOCIATION — SITE WEB v3
+PEINTOGO ASSOCIATION — VERSION FINALE
 
-Contenu:
-- index.html : site complet responsive
-- images/logo-peintogo.png : logo
-- images/ : photos de réalisations
-- robots.txt et sitemap.xml : préparation SEO
+Contenu :
+- index.html : site responsive et autonome
+- images/ : logo et photos de réalisations
+- CNAME : domaine GitHub Pages préparé pour www.peintogo.tg
+- robots.txt + sitemap.xml : préparation SEO
 
 PUBLICATION GITHUB PAGES
-1. Décompressez le ZIP.
-2. Dans votre dépôt GitHub "peintogo-site", remplacez index.html et le dossier images par ceux-ci.
-3. Ajoutez aussi robots.txt et sitemap.xml à la racine.
-4. Commit / enregistrer les changements.
-5. GitHub Pages publiera automatiquement la nouvelle version.
-
-DOMAINE PERSONNALISÉ
-Le site contient déjà les références SEO pour https://www.peintogo.tg/.
-N'ajoutez pas encore de fichier CNAME tant que le domaine n'est pas acheté et que les DNS ne sont pas configurés. Une fois le domaine prêt, utilisez Settings > Pages > Custom domain dans GitHub et saisissez www.peintogo.tg.
+1. Décompresser ce dossier.
+2. Envoyer le contenu de PeinTogo_v2/ dans le dépôt GitHub, à la racine de la branche main.
+3. Dans Settings > Pages : Deploy from a branch > main > /(root).
+4. Pour le domaine : ajouter www.peintogo.tg dans Settings > Pages > Custom domain.
+5. Chez le registrar, créer le DNS nécessaire pour www.peintogo.tg vers le domaine GitHub Pages indiqué par GitHub.
+6. Activer Enforce HTTPS quand GitHub le permet.
 
 CONTACTS
-WhatsApp/Téléphone: +228 98 28 04 53 / +228 92 44 48 01
-Email: adjingaalbert83@gmail.com
-Slogan: Avec PeinTogo, vivez la couleur de vos rêves.
++228 98 28 04 53
++228 92 44 48 01
+adjingaalbert83@gmail.com
+
+Le formulaire de devis prépare un message WhatsApp avec les informations saisies.
