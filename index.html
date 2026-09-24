@@ -11,245 +11,234 @@
 <link rel="icon" href="images/logo-peintogo.png">
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:#222;
-  line-height:1.6;
-  background:#fff;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
 }
 
-:root{
-  --turquoise:#087f8c;
-  --red:#e53935;
-  --dark:#10191e;
-  --light:#f4f7f8;
+header {
+    background: #10191e;
+    padding: 15px 0;
 }
 
-.container{
-  width:90%;
-  max-width:1150px;
-  margin:auto;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-/* HEADER */
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(16,25,30,.97);
-  box-shadow:0 3px 15px rgba(0,0,0,.2);
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.nav{
-  min-height:75px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+.logo {
+    width: 150px;
 }
 
-.brand img{
-  width:150px;
-  max-height:65px;
-  object-fit:contain;
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-nav{
-  display:flex;
-  gap:25px;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+    url("images/realisation-1.jpg") center/cover no-repeat;
 }
 
-nav a:hover{
-  color:#10a6a6;
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
 }
 
-/* HERO */
-.hero{
-  min-height:90vh;
-  display:flex;
-  align-items:center;
-  text-align:center;
-  color:white;
-
-  background:
-  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-  url('images/realisation-1.jpg') center/cover no-repeat;
+.hero h1 span {
+    color: #10a6a6;
 }
 
-.hero-content{
-  width:100%;
+.hero p {
+    font-size: 20px;
+    margin: 8px 0;
 }
 
-.hero h1{
-  font-size:clamp(2.5rem,6vw,5rem);
-  margin-bottom:20px;
-  text-transform:uppercase;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #e53935;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-.hero h1 span{
-  color:#10a6a6;
+section {
+    padding: 70px 0;
 }
 
-.hero p{
-  font-size:1.3rem;
-  margin-bottom:12px;
+.title {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 25px;
-  border-radius:8px;
-  background:var(--red);
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+.title h2 {
+    color: #087f8c;
+    font-size: 35px;
 }
 
-/* SECTIONS */
-section{
-  padding:80px 0;
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
 }
 
-.section-head{
-  text-align:center;
-  margin-bottom:45px;
+.about img {
+    width: 100%;
+    border-radius: 15px;
 }
 
-.section-head h2{
-  color:var(--turquoise);
-  font-size:2.2rem;
-  margin-bottom:10px;
+.services {
+    background: #f4f7f8;
 }
 
-.section-head p{
-  color:#666;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-/* ABOUT */
-.about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:45px;
-  align-items:center;
+.card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.10);
 }
 
-.about img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
+.card h3 {
+    color: #087f8c;
+    margin: 15px 0;
 }
 
-.about h2{
-  color:var(--turquoise);
-  margin-bottom:20px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-.about p{
-  margin-bottom:15px;
+.gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-/* SERVICES */
-.services{
-  background:var(--light);
+.contact {
+    background: #10191e;
+    color: white;
 }
 
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+.contact h2 {
+    color: #10a6a6;
 }
 
-.card{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  text-align:center;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
+.contact a {
+    color: white;
 }
 
-.card .icon{
-  font-size:45px;
-  margin-bottom:15px;
+.contact-box {
+    text-align: center;
 }
 
-.card h3{
-  color:var(--turquoise);
-  margin-bottom:10px;
+footer {
+    background: #080e11;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
 }
 
-/* GALERIE */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
 }
 
-.gallery img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-  border-radius:12px;
-  transition:.3s;
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
 }
 
-.gallery img:hover{
-  transform:scale(1.03);
-}
+@media (max-width: 500px) {
 
-/* CONTACT */
-.contact{
-  background:var(--dark);
-  color:white;
-}
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+    .hero h1 {
+        font-size: 35px;
+    }
 }
+</style>
 
-.contact-box{
-  background:rgba(255,255,255,.08);
-  padding:30px;
-  border-radius:15px;
-}
-
-.contact h2{
-  color:#10a6a6;
-  margin-bottom:20px;
-}
-
-.contact p{
-  margin-bottom:12px;
-}
-
-.contact a{
-  color:white;
-}
-
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:60px;
- 
+  </head>
